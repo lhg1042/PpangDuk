@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html> 
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF-8"> 
 <title>빵덕 로그인</title>
 <script src="check.js"></script>
 </head>
