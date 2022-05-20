@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>빵덕 회원가입</title>
+<title>빵덕 회원가입</title> 
 <script src="check.js"></script>
 <style>
 	@font-face {font-family:Jua Regular; src: url(/ppangduk/JUA-REGULAR.TTF) format('truetype');}
