@@ -1,0 +1,8 @@
+
+.commu_home, .commu_following, .commu_write, .commu_free, .commu_event {font-size:16px; padding-left:10px; padding-right:10px;}
+.main_menu1, .commu_write {color:#FF9436;}
+.commu_write {border-bottom:4px solid #FF9436; padding-bottom:17px;}
+.div_menu 
+	{margin:0 auto; margin-top:20px; padding-top:13px;
+	width:950px; height:45px; border-top:1px solid #EAEAEA; border-bottom:1px solid #EAEAEA;}
+.commu_home:hover, .commu_following:hover, .commu_free:hover, .commu_event:hover {color:#FF9436;}

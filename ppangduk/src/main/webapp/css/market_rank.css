@@ -1,0 +1,8 @@
+
+.market_home, .market_categori, .market_rank {font-size:16px; padding-left:10px; padding-right:10px;}
+.main_menu2, .market_rank {color:#FF9436;}
+.market_rank {border-bottom:4px solid #FF9436; padding-bottom:17px;}
+.market_home:hover, .market_categori:hover {color:#FF9436;}
+.div_menu 
+	{margin:0 auto; margin-top:20px; padding-top:13px; 
+	width:950px; height:45px; border-top:1px solid #EAEAEA; border-bottom:1px solid #EAEAEA;}

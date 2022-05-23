@@ -1,0 +1,33 @@
+.commu_home, .commu_following, .commu_write, .commu_free, .commu_event {font-size:16px; padding-left:10px; padding-right:10px;}
+.main_menu1, .commu_home {color:#FF9436;}
+.commu_home {border-bottom:4px solid #FF9436; padding-bottom:17px;}
+.div_menu 
+	{margin:0 auto; margin-top:20px; padding-top:13px;
+	width:950px; height:45px; border-top:1px solid #EAEAEA; border-bottom:1px solid #EAEAEA;}
+.commu_following:hover, .commu_write:hover, .commu_free:hover, .commu_event:hover {color:#FF9436;}	
+	 
+.section_donut{width:1000px; margin:0 auto;}
+.img_donut {width:650px; margin-top:10px; margin-left:30px; border-radius:7px; display:flex;}
+.span_donut {display:flex; color:white; font-size:27px; font-weight:bold; margin-top:-120px; margin-left:50px;}
+.img_profile {width:30px; height:30px; border-radius:30px; display:flex;}
+.span_profile {display:flex; margin-top:20px; margin-left:50px; color:white; font-size:13px; }
+b {margin-top:5px; margin-left:5px;}
+.button {width:120px; height:45px; background-color: rgba(0,0,0,0); color:white; 
+	font-size:17px; font-weight:bold; border:1px solid white; border-radius:5px;
+	margin-top:-10px; margin-left:380px;}
+.button:hover {background:orange; border:none;}
+
+.section_ad {width:277px; margin-top:-340px; margin-left:875px;}
+.img2 {border-radius:5px;}
+
+.div_select {margin-top:30px; margin-left:215px;}
+
+.div_story, .div_star, .div_categori {margin-top:80px; margin-left:215px;}
+
+.span_story, .span_star, .span_categori {font-size:18px; color:black; font-weight:bold; padding-left:5px;}
+.table_story {width:945px; height:120px; background:#F6F6F6; margin-left:-5px; margin-top:10px; border-radius:7px;}
+.story_add {width:30px; height:30px; padding-left:15px;}
+
+.table_star {width:945px; height:300px; background:#F6F6F6; margin-left:-5px; margin-top:10px; border-radius:7px;}
+
+.table_select, .table_categori {width:945px; height:90px; background:#F6F6F6; margin-left:-5px; margin-top:10px; border-radius:7px;}
