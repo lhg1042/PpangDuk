@@ -6,7 +6,8 @@
 	width:950px; height:45px; border-top:1px solid #EAEAEA; border-bottom:1px solid #EAEAEA;}
 .commu_following:hover, .commu_write:hover, .commu_free:hover, .commu_event:hover {color:#FF9436;}	
 	 
-.section_donut{width:1000px; margin:0 auto;}
+	 
+.section_donut{width:650px;}
 .img_donut {width:650px; margin-top:10px; margin-left:30px; border-radius:7px; display:flex;}
 .span_donut {display:flex; color:white; font-size:27px; font-weight:bold; margin-top:-120px; margin-left:50px;}
 .img_profile {width:30px; height:30px; border-radius:30px; display:flex;}
@@ -17,12 +18,12 @@ b {margin-top:5px; margin-left:5px;}
 	margin-top:-10px; margin-left:380px;}
 .button:hover {background:orange; border:none;}
 
-.section_ad {width:277px; margin-top:-340px; margin-left:875px;}
+.section_ad {width:280px; height:350px; margin-top:-340px; margin-left:690px;}
 .img2 {border-radius:5px;}
 
-.div_select {margin-top:30px; margin-left:215px;}
+.div_select {margin-top:60px; margin-left:30px;}
 
-.div_story, .div_star, .div_categori {margin-top:80px; margin-left:215px;}
+.div_story, .div_star, .div_categori {margin-top:80px; margin-left:30px;}
 
 .span_story, .span_star, .span_categori {font-size:18px; color:black; font-weight:bold; padding-left:5px;}
 .table_story {width:945px; height:120px; background:#F6F6F6; margin-left:-5px; margin-top:10px; border-radius:7px;}

@@ -51,6 +51,3 @@ strong {color:#4C4C4C; font-size:18px; padding-left:10px;}
 			</tr>
 		</table>
 	</header>
-</div>
-</body>
-</html>
