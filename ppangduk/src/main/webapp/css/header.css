@@ -33,11 +33,11 @@ span {color:#4C4C4C; font-size:18px; padding-left:10px; font-weight:600;}
 .image_search {width:35px; height:35px; vertical-align:middle;}
 
 .member{width:300px; height:40px; float:left; margin-top:23px; margin-left:20px;}
-.cart{width:27px; height:27px; vertical-align:middle;}
+.cart, .alarm, .scrap{width:25px; height:25px; vertical-align:middle;}
 .member_font{width:200px; height:40px; margin-left:35px; margin-top:-23px;}
 
 .font {
-	font-size:15px; 
+	font-size:12px; 
 	color:#4C4C4C; 
 	font-weight:600; 
 	font-family:appleSDl;

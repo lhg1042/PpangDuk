@@ -27,7 +27,7 @@ strong {color:#999999; font-size:12px;}
 <form action="loginService.jsp" method="post" id="f">
 	<table>
 		<tr>
-			<td><a href="community/community_home.jsp"><img class="img_logo" src="images/ppangduk_logo.png"></a></td>
+			<td><a href="/ppangduk/community/community_home.jsp"><img class="img_logo" src="images/ppangduk_logo.png"></a></td>
 			<td style="padding-top:7px"><a class="logo_text" href="community_home.jsp">빵덕</a></td>
 		</tr>
 		<tr><td class="field" colspan="2" style="padding-top:20px;"><input type="text" id="id" name="id" placeholder="이메일" style="margin-top:10px"></td></tr>

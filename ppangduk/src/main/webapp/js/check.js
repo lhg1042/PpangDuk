@@ -22,31 +22,33 @@ function allCheck() {
 	} else {
 		document.getElementById('f').submit();
 	}
+}
 	
-	function pwCheck() {
-		pw = document.getElementById('pw');
-		confirm_pw = document.getElementById('confirm_pw');
-		if(pw.value == confirm_pw.value) {
-			document.getElementById('label').innerHTML = '일치';
-		} else {
-			document.getElementById('label').innerHTML = '불일치';
-			pw.value="";
-			confirm_pw.value="";
-			pw.focus();
-		}
+function pwCheck() {
+	pw = document.getElementById('pw');
+	confirm_pw = document.getElementById('confirm_pw');
+	if(pw.value == confirm_pw.value) {
+		document.getElementById('label').innerHTML = '일치';
+	} else {
+		document.getElementById('label').innerHTML = '불일치';
+		pw.value="";
+		confirm_pw.value="";
+		pw.focus();
 	}
+}
 	
-	function loginCheck() {
-		id = document.getElementById('id').value;
-		email = document.getElementById('email').value;
-		email_id = id+email;
-		pw = document.getElementById('pw').value;
+function loginCheck() {
+	id = document.getElementById('id').value;
+	email = document.getElementById('email').value;
+	email_id = id+email;
+	pw = document.getElementById('pw').value;
 		
-		if(email_id == "" || pw == "") {
-			alert('아이디 또는 비밀번호가 입력되지 않았습니다.');
-		} else {
-			document.getElementById('f').method = 'post';
-			document.getElementById('f').submit();
-		}
+	if(email_id == "" || pw == "") {
+		alert('아이디 또는 비밀번호가 입력되지 않았습니다.');
+	} else {
+		document.getElementById('f').method = 'post';
+		document.getElementById('f').submit();
 	}
-} 
+}
+
+

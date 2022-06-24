@@ -4,7 +4,49 @@
 <html> 
 <head>
 <meta charset="UTF-8">
-<title>빵덕 회원가입</title> 
+<title>빵덕 회원가입</title>
+<script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+<script>
+var naverLogin = new anver.LoginWithNaverId({
+			clientId:"x5XLStzhL_J2aNIt0Gpz";
+			callbackUrl: "http://localhost:8085/registForm.jsp";
+			isPopup:false,
+			callbackHandle:true
+		});
+naverLogin.init();
+
+window.addEventListener('load', function() {
+	naverLogin.getLoginStatus(function(status){
+		if(status) {
+			var email = naverLogin.user.getEmail();
+			console.log(naverLogin.user);
+			
+			if(email == undefined || email == null) {
+				alert("이메일은 필수정보입니다. 정보제공을 동의해주세요.");
+				
+				naverLogin.reprompt();
+				return;
+			}
+		} else {
+			console.log("callback 처리에 실패하였습니다.");
+		}
+	});
+});
+
+var testPopUp;
+function openPopUp() {
+	testPopUp = window.open("https://nid.naver.com/nidlogin.logout", "_blank", "toolbar-yes, scrollbars=yes, resizable-yes, width=1, hegiht=1");
+}
+function closePopUp() {
+	testPopUp.close();
+}
+function naverLogout() {
+	openPopUp();
+	setTimeout(function() {
+		closePopUp();
+	}, 1000);
+}
+</script>
 <script src="check.js"></script>
 <style>
 	@font-face {font-family:Jua Regular; src: url(/ppangduk/JUA-REGULAR.TTF) format('truetype');}
@@ -28,7 +70,6 @@
 	.button_td {border-bottom:1px solid #EAEAEA;}
 	.login_naver, .login_kakao, .login_facebook {width:55px; height:55px; margin:15px;}
 	p {float:left; font-size:12px; font-weight:bold; color:#999999; margin-top:4px;}
-	
 </style>
 </head>
 <body>
@@ -38,10 +79,10 @@
 	</div>
 	
 	<table>
-		<tr><td class="label"><label>아이디</label></td></tr>
+		<tr><td class="label"><label>이메일</label></td></tr>
 		<tr>
 			<td>
-				<input type="text" id="id" name="id" placeholder="아이디" style="margin-top:10px"><span>@</span>
+				<input type="text" id="id" name="id" placeholder="아이디" style="margin-top:10px" ><span>@</span>
 				<select id="email" name="email">
 					<option value="">이메일</option>
 					<option value="@naver.com">naver.com</option>
@@ -52,8 +93,12 @@
 			</td>
 		</tr>
 		<tr><td><input class="email_button" type="button" value="이메일 인증"></td></tr>
-		<tr><td class="label"><label>비밀번호</label><br><p>영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</p></td></tr>
-		<tr><td class="field"><input type="password" id="pw" name="pw" placeholder="비밀번호"></td></tr>
+		<tr><td class="label"><label>비밀번호</label></td></tr>
+		<tr>
+			<td class="field">
+				<input type="password" id="pw" name="pw" placeholder="비밀번호">			
+			</td>
+		</tr>
 		
 		<tr><td class="label"><label>비밀번호 확인</label></td></tr> 
 		<tr><td class="field"><input type="password" id="confirmPw" name="confirmPw" placeholder="비밀번호 확인" onchange="pwCheck()" style="margin-top:10px"></td></tr>
@@ -68,7 +113,7 @@
 		
 		<tr>
 			<td>
-				<img class="login_naver" src="images/login_naver.png">
+				<a id="naverIdLogin_loginButton" href="javascript:void(0)"><img class="login_naver" src="images/login_naver.png"></a>
 				<img class="login_kakao" src="images/login_kakao.png">
 				<img class="login_facebook" src="images/login_facebook.png">
 			</td>
